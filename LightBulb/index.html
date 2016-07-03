@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="button" value="Turn on" onclick="turnOn()">
+    <img src="http://www.w3schools.com/js/pic_bulbon.gif">
+    <input type="button" value="Turn off" onclick="turnOff()">
+    <script>
+        function turnOn() {
+            document.getElementsByTagName("img")[0].src="http://www.w3schools.com/js/pic_bulbon.gif";
+        }
+        function  turnOff() {
+            document.getElementsByTagName("img")[0].src="http://www.w3schools.com/js/pic_bulboff.gif";
+        }
+    </script>
+</div>
+</body>
+</html>
